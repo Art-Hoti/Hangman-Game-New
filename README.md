@@ -1,33 +1,62 @@
-# Hangman Game
+# Hangman-Game
+# Hangman
+Hangman is a classic game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts.
+
+This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
 
 ## Table of Contents
-- [Description](#description)
-- [Installation](#installation)
-- [Usage](#usage)
-- [File Structure](#file-structure)
-- [License](#license)
+1. [Description](#description)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [File Structure](#file-structure)
+5. [License](#license)
 
 ## Description
-This project is a command-line implementation of the classic Hangman game, where the player tries to guess the letters in a hidden word. The game selects a random word from a predefined list, and the player has a limited number of attempts to guess all the letters in the word.
+This project is a classic implementation of the Hangman game where the computer thinks of a word and the user tries to guess it within a certain number of attempts. The project is developed step-by-step, with each milestone adding new functionality to the game. The aim of the project is to learn and apply Python programming concepts such as lists, conditional statements, loops, and user input handling.
 
-### Project Aim
-The aim of this project is to practice Python programming skills, including:
-- Using loops and conditionals
-- Writing and using functions
+### What I Learned
+- Creating and manipulating lists in Python
+- Using conditional statements and loops
 - Handling user input
-- Implementing basic game logic
-- Working with classes and object-oriented programming
-
-### What was Learned
-- How to structure a Python project
-- Using Git for version control
-- Refactoring code for better readability and maintainability
-- Implementing and testing game logic
-- Basic principles of object-oriented programming (OOP)
+- Working with Python's `random` module
+- Tracking code changes and collaborating using GitHub
 
 ## Installation
-To run this project, ensure you have Python installed on your machine. You can download Python from [python.org](https://www.python.org/).
+To install and run the project locally, these are the steps:
 
-Clone the repository to your local machine using:
-```bash
-git clone https://github.com/Art-Hoti/Hangman-Game-New.git
+1. **Clone the repository:**
+    ```sh
+    git clone https://github.com/yourusername/hangman-game.git
+    ```
+2. **Navigate to the project directory:**
+    ```sh
+    cd hangman-game
+    ```
+3. **Ensure you have Python installed:**
+    Make sure Python 3 is installed. [python.org](https://www.python.org/).
+
+    ## Usage
+To play the game, run the `milestone_2.py` script:
+
+1. **Navigate to the directory containing the script:**
+    ```sh
+    cd /path/to/milestone_2.py
+    ```
+2. **Run the script using Python:**
+    ```sh
+    /usr/local/bin/python3 milestone_2.py
+    ```
+3. **Follow the on-screen prompts to guess the word.**
+
+## File Structure
+The project directory is structured as follows:
+hangman-game/
+├── milestone_2.py
+├── README.md
+└── other_files...
+
+- `milestone_2.py`: Contains the main game logic.
+- `README.md`: This README file with the project information.
+
+## License
+This project is licensed under the MIT License. [LICENSE](LICENSE) .
