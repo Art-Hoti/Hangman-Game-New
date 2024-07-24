@@ -1,5 +1,5 @@
-# Hangman-Game
 # Hangman
+
 Hangman is a classic game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts.
 
 This is an implementation of the Hangman game, where the computer thinks of a word and the user tries to guess it. 
@@ -22,41 +22,46 @@ This project is a classic implementation of the Hangman game where the computer 
 - Tracking code changes and collaborating using GitHub
 
 ## Installation
-To install and run the project locally, these are the steps:
+To install and run the project locally, follow these steps:
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/yourusername/hangman-game.git
+    git clone https://github.com/Art-Hoti/Hangman-Game-New.git
     ```
 2. **Navigate to the project directory:**
     ```sh
-    cd hangman-game
+    cd Hangman-Game-New
     ```
 3. **Ensure you have Python installed:**
-    Make sure Python 3 is installed. [python.org](https://www.python.org/).
+    Make sure Python 3 is installed. You can download it from [python.org](https://www.python.org/).
 
-    ## Usage
-To play the game, run the `milestone_2.py` script:
+## Usage
+To play the game, run the `milestone_5.py` script:
 
 1. **Navigate to the directory containing the script:**
     ```sh
-    cd /path/to/milestone_2.py
+    cd /path/to/Hangman-Game-New
     ```
 2. **Run the script using Python:**
     ```sh
-    /usr/local/bin/python3 milestone_2.py
+    python milestone_5.py
     ```
 3. **Follow the on-screen prompts to guess the word.**
 
 ## File Structure
 The project directory is structured as follows:
-hangman-game/
+Hangman-Game-New/
 ├── milestone_2.py
-├── README.md
-└── other_files...
+├── milestone_3.py
+├── milestone_4.py
+├── milestone_5.py
+└── README.md
 
-- `milestone_2.py`: Contains the main game logic.
+- `milestone_2.py`: Contains the code for the second milestone.
+- `milestone_3.py`: Contains the code for the third milestone.
+- `milestone_4.py`: Contains the code for the fourth milestone.
+- `milestone_5.py`: Contains the code for the final implementation of the game.
 - `README.md`: This README file with the project information.
 
 ## License
-This project is licensed under the MIT License. [LICENSE](LICENSE) .
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
