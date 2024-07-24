@@ -39,21 +39,36 @@ class Hangman:
             if letter == guess:
                 self.word_guessed[index] = guess
 
-    def play(self):
-        print("Welcome to Hangman!")
-        print("Guess the country name.")
-        
-        while self.num_lives > 0 and self.num_letters > 0:
-            guess = self._get_user_input()
-            self._evaluate_guess(guess)
-            print(" ".join(self.word_guessed))
-        
-        if self.num_letters == 0:
-            print("Congratulations! You've guessed the word!")
+    def ask_for_input(self):
+        guess = self._get_user_input()
+        self._evaluate_guess(guess)
+
+    def display_word(self):
+        print(" ".join(self.word_guessed))
+    
+    def is_game_over(self):
+        return self.num_lives == 0 or self.num_letters == 0
+
+def play_game(word_list):
+    num_lives = 5
+    game = Hangman(word_list, num_lives)
+
+    print("Welcome to Hangman!")
+    print("Guess the country name.")
+    game.display_word()
+
+    while True:
+        if game.num_lives == 0:
+            print('You lost!')
+            print(f"The word was '{game.word}'.")
+            break
+        elif game.num_letters > 0:
+            game.ask_for_input()
+            game.display_word()
         else:
-            print(f"Game over! The word was '{self.word}'.")
+            print('Congratulations. You won the game!')
+            break
 
 if __name__ == "__main__":
     word_list = ["United Kingdom", "Canada", "Australia", "New Zealand", "India"]
-    game = Hangman(word_list)
-    game.play()
+    play_game(word_list)
